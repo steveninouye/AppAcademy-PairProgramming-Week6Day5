@@ -1,0 +1,38 @@
+body {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background: url(./images/background.jpg);
+
+  background-size: auto;
+}
+
+.clock {
+  font-size: 60px;
+  border: 2px solid #666699;
+  border-radius: 4px;
+  padding: 0 13px;
+  background-color: #e0e0eb;
+  width: 600px;
+}
+
+.clock-row {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clock-row p {
+  display: inline-block;
+
+}
+
+.tabs {
+  background-color: #ebe3e0;
+}
