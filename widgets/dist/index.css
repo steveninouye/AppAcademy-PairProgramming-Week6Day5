@@ -10,7 +10,7 @@ body {
   justify-content: center;
   background: url(./images/background.jpg);
 
-  background-size: auto;
+  background-size: 100% 100%;
 }
 
 .clock {
@@ -33,6 +33,27 @@ body {
 
 }
 
-.tabs {
+.tab-content {
+
+  font-size: 16px;
+  display: block;
+  max-width: 100px;
+}
+
+.tabs-container {
   background-color: #ebe3e0;
+  border: 1px solid #ffffff;
+  display: block;
+  max-width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+.tab-title {
+  font-size: 20px;
+  background-color: #ebe3e0;
+  border-right: 2px solid #a8a19d;
+  border-bottom: none;
+  padding: 5px 7px 0 7px;
+
 }

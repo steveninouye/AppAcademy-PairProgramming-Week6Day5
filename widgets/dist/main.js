@@ -23266,9 +23266,11 @@ function (_React$Component) {
 
       var content = this.state.tabs[this.state.selectedIndex].content;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "tabs-folder tabs"
+        className: "tabs-container tab-header"
       }, this.state.tabs.map(function (tab, idx) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: Math.pow(idx, 2) / 5,
+          className: "tab-title",
           onClick: _this2.handleClick,
           id: idx
         }, tab.title);

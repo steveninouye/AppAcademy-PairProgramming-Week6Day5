@@ -16,11 +16,11 @@ class Tabs extends React.Component {
   render() {
     const content = this.state.tabs[this.state.selectedIndex].content
     return (
-      <div className = "tabs-folder tabs">
+      <div className = "tabs-container tab-header">
 
 
         {this.state.tabs.map((tab, idx) =>
-        <div onClick = {this.handleClick} id = {idx}>{tab.title}</div>)
+        <div key={(idx**2)/5}  className="tab-title" onClick = {this.handleClick} id = {idx}>{tab.title}</div>)
         }
           <div className = "tab-content">{content}</div>
       </div>

@@ -25,8 +25,10 @@ render() {
       <div className="clock">
         <div className="clock-row">
         <p>Time:</p><p>{ this.state.time.toString().split(" ")[4] }</p>
-        </div><div className="clock-row">
-        <p>Date:</p><p>{ this.state.time.toString().split(" ").slice(0,4).join(" ") }</p></div>
+        </div>
+        <div className="clock-row">
+        <p>Date:</p><p>{ this.state.time.toString().split(" ").slice(0,4).join(" ") }</p>
+      </div>
       </div>
     );
   }
